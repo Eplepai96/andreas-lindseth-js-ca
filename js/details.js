@@ -5,7 +5,7 @@ const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
 
-const id = params.get("name");
+const name = params.get("name");
 
 console.log(name)
 
