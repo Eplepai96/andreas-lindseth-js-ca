@@ -50,7 +50,7 @@ function validateLength(input, len) {
 }
 
 function validateEmail(email) {
-    const regEx = /\$+@\$+\.\$+/;
+    const regEx = /\S+@\S+\.\S+/;
     const patternmatches = regEx.test(email);
     return patternmatches;
 }

@@ -30,12 +30,13 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.link-container {
+.link {
     padding: 10px;
     background-color: #e6ffb8;
     margin: 10px;
     border-radius: 5px;
     border: solid rgb(21, 122, 21);
+    color: black;
 }
 
 a {
@@ -87,17 +88,19 @@ input {
 .error {
     display: none;
     color: red;
+    margin-bottom: 15px;
 }
 
 form {
     margin: 5px;
 }
 
-label {
-    margin: 2px;
-}
-
-.content {
+.name {
     font-weight: bold;
     font-size: 20px;
+    color: #020b3b;
+}
+
+.city {
+    font-weight: bold;
 }

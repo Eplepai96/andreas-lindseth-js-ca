@@ -9,7 +9,9 @@ const name = params.get("name");
 
 console.log(name)
 
-const url = "https://api.openbrewerydb.org/breweries/" + name;
+document.title = `${name}`
+
+const url = "https://api.openbrewerydb.org/breweries?by_name=" + name;
 
 async function fetchBrewery () {
     try{
@@ -20,6 +22,7 @@ async function fetchBrewery () {
         createHTML(brewery)
 
         console.log(queryString)
+        
 
     } catch(error) {
         console.log(error)

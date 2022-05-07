@@ -13,10 +13,10 @@ async function getBrewery() {
     container.innerHTML = ""
 
     for (let i = 0; i < results.length; i++) {
-        container.innerHTML += `<a href="details.html?name=${results.name}" class="link-container">                       
-                                <div class="content">${results[i].name}</div>
-                                <div class="originator">${results[i].country}</div>
-                                <div class="tags">${results[i].city}</div>
+        container.innerHTML += `<a href="details.html?name=${results[i].name}" class="link">                       
+                                <div class="name">${results[i].name}</div>
+                                <div class="country">${results[i].country}</div>
+                                <div class="city">${results[i].city}</div>
                                 </a>`
     }
 
